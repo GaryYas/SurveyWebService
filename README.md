@@ -1,5 +1,5 @@
 # SurveyWebService
-Web service for fillinha survey for personal health.
+Web service for fillingg  survey for personal health.
 	The survey consists of the following questions:
 	How was your sleep last night (range: 0(bad) - 10(good))
 	How good is your skin condition (range: 0(bad) - 10(good))

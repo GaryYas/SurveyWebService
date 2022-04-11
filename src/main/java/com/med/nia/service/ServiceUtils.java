@@ -19,6 +19,7 @@ public class ServiceUtils {
     public static SurveyDto transSurveyEntityToDto(SurveyEntity surveyEntity) {
         return SurveyDto.builder().userId(surveyEntity.getUser().getId()).skinCondition(surveyEntity.getSkinCondition()).
                 sleepRate(surveyEntity.getSleepRate()).serviceId(surveyEntity.getId())
+                .date(surveyEntity.getCreatedAt())
                 .build();
     }
 

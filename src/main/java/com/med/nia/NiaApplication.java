@@ -14,4 +14,3 @@ public class NiaApplication {
 	}
 
 }
-//com.med.nia.NiaApplication

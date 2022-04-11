@@ -47,6 +47,7 @@ public class SurveyService {
         SurveyEntity survey = surveyRepository.save(new SurveyEntity(surveyDto.getSleepRate(), surveyDto.getSkinCondition(), user, new Date()));
         survey.setUser(user);
         surveyDto.setServiceId(survey.getId());
+        surveyDto.setDate(survey.getCreatedAt());
 
         return surveyDto;
 

@@ -1,10 +1,11 @@
 package com.med.nia.dto;
 
+import io.swagger.v3.oas.annotations.Hidden;
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Builder;
 import lombok.Data;
 
-import javax.validation.constraints.Max;
-import javax.validation.constraints.Min;
+import java.util.Date;
 
 
 @Data
@@ -17,6 +18,9 @@ public class SurveyDto {
     int sleepRate;
     int skinCondition;
     int userId;
+    @Schema(required = false, hidden = true)
     int serviceId;
+    @Schema(required = false, hidden = true)
+    Date date;
 
 }

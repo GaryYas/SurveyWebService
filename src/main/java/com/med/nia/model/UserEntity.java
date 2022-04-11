@@ -24,7 +24,7 @@ public class UserEntity {
     @Column
     String name;
 
-    @Column(name = "user_name", unique = true)
+    @Column(name = "user_name")
     String userName;
 
     @Column
@@ -60,10 +60,10 @@ public class UserEntity {
      */
     public void removeSurvey() {
         Iterator<SurveyEntity> iterator = performedSurveys.iterator();
-        while (iterator.hasNext()){
+        while (iterator.hasNext()) {
             SurveyEntity surveyEntity = iterator.next();
             iterator.remove();
-            surveyEntity.user =null;
+            surveyEntity.user = null;
         }
 
         this.getPerformedSurveys().clear();
@@ -87,21 +87,6 @@ public class UserEntity {
         }
     }
 
-
-    /*
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        UserEntity that = (UserEntity) o;
-        return id == that.id && age == that.age && Objects.equals(name, that.name) && Objects.equals(userName, that.userName) && Objects.equals(performedSurveys, that.performedSurveys);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, name, userName, age, performedSurveys);
-    }
-    */
     @Override
     public String toString() {
         return "UserEntity{" +

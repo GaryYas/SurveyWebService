@@ -4,7 +4,7 @@ Web service for filling survey for personal health.
 	How was your sleep last night (range: 0(bad) - 10(good))
 	How good is your skin condition (range: 0(bad) - 10(good))
 
-Implemented with following technologies: Spring boot maven, Sprig data jpa(hibernate), H2 relational database,Swagger 3 open api ,junit 5, lombok and java 11.
+Implemented with following technologies: Spring boot maven, Sprig data jpa(hibernate), H2 relational database, Swagger 3 open api ,junit 5, lombok and java 11.
 
 For runnig you should have installed maven 3.65 and java 11. Or run through your preferred ide without maven installed.
 
